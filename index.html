@@ -13,18 +13,48 @@
 </head>
 <body>
     <header>
-        Tic-Tac-Toe
+        <h3>Tic-Tac-Toe</h3>
     </header>
-    <div class="gameContainer">
-        <div id="box0" class="box">x</div>
-        <div id="box1" class="box">x</div>
-        <div id="box2" class="box">x</div>
-        <div id="box3" class="box">o</div>
-        <div id="box4" class="box">x</div>
-        <div id="box5" class="box">o</div>
-        <div id="box6" class="box">o</div>
-        <div id="box7" class="box">o</div>
-        <div id="box8" class="box">x</div>
+    <div class="setup">
+        <div class="card" id="cardLeft">
+            <div class="playerSetup">Player</div>
+        </div>
+        <div class="vs">vs</div>
+        <div class="card" id="cardRight">
+            <div class="radio">
+                <input type="radio" id="player" value="player" name="opponent">
+                <label for="player">Player</label><br>
+            </div>
+            <div class="radio">
+                <input type="radio" id="botEasy" value="botEasy" name="opponent">
+                <label for="botEasy">AI Easy</label><br>
+            </div>
+        </div>
     </div>
+    <button id="start">START</button>
+    <div class="main">
+        <div class="playerXBox">
+            <div class="playerName selected" id="x">Player X</div>
+            <div class="record" id="xRecord"></div>
+            <div class="playerMove" id="playerXMove">Your Move</div>
+        </div>
+        <div class="gameContainer">
+            <div id="box0" data-index="0" class="box"></div>
+            <div id="box1" data-index="1" class="box"></div>
+            <div id="box2" data-index="2" class="box"></div>
+            <div id="box3" data-index="3" class="box"></div>
+            <div id="box4" data-index="4" class="box"></div>
+            <div id="box5" data-index="5" class="box"></div>
+            <div id="box6" data-index="6" class="box"></div>
+            <div id="box7" data-index="7" class="box"></div>
+            <div id="box8" data-index="8" class="box"></div>
+        </div>
+        <div class="playerOBox">
+            <div class="playerName unselected" id="o">Player O</div>
+            <div class="record" id="oRecord"></div>
+            <div class="playerMove" id="playerOMove">Your Move</div>
+        </div>
+    </div>
+    <button id="reset">RESET</button>
 </body>
 </html>

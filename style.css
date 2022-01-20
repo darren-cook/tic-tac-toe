@@ -40,3 +40,123 @@ header {
     font-size: 8vh;
     font-family: 'Raleway', sans-serif;
 }
+
+.main {
+    display: none;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+}
+
+.playerName {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 8vh;
+    font-weight: 800;
+    transition: 100ms;
+    text-shadow: 2px 2px 1px black;
+    color: ivory;
+    padding: 3px;
+}
+
+.playerMove {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 3vh;
+    font-weight: 500;
+    color: black;
+}
+
+#playerXMove {
+    display: flex;
+}
+
+#playerOMove {
+    display: none;
+}
+
+.record {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 3vh;
+    font-weight: 800;
+    transition: 100ms;
+    text-shadow: 1px 2px 1px black;
+    color: ivory;
+    padding: 3px;
+}
+
+.selected {
+    transform: scale(1.1);
+}
+
+.unselected {
+    transform: scale(0.9);
+}
+
+.setup {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50vh;
+    width: 75vw;
+}
+
+.card {
+    height: 25vh;
+    width: 33vw;
+    background-color: #e2f0f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.playerSetup,
+label {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 2vw;
+    font-weight: 500;
+    text-align: center;
+}
+
+.vs {
+    font-family: 'Libre Baskerville', serif;
+    font-size: xx-large;
+    font-weight: 800;
+}
+
+.radio {
+    display: flex;
+    align-items: center;
+}
+
+button {
+    width: 15vw;
+    height: 5vw;
+    background-color: #e2f0f9;
+    border-style: none;
+    cursor: pointer;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 2vw;
+    font-weight: 800;
+    color: #141e2a;
+}
+
+#start {
+    display: inline-block;
+}
+
+#reset {
+    display: none;
+    margin-top: 5vh;
+}
+
+
+
